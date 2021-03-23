@@ -1,0 +1,55 @@
+{
+  "name": "tinyimg",
+  "version": "1.0.0",
+  "description": "Minify your imagess",
+  "main": "main.js",
+  "title": "Tinyimg",
+  "productName": "Tinyimg",
+  "icon": "build/icon.icns",
+  "background": "test-background.png",
+  "target": "mac",
+  "contents": [
+    {
+      "x": 448,
+      "y": 344,
+      "type": "link",
+      "path": "/Applications"
+    },
+    {
+      "x": 192,
+      "y": 344,
+      "type": "file",
+      "path": "tinyimg.app"
+    }
+  ],
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --dir",
+    "build-mac": "electron-builder build --mac",
+    "build-linux": "electron-builder build --linux",
+    "build-win": "electron-builder build --win",
+    "build-all": "electron-builder -mwl",
+    "publish": "electron-builder build -p always"
+  },
+  "repository": "https://github.com/prasetyoadi/tinyimg",
+  "keywords": [
+    "compressing",
+    "minifying"
+  ],
+  "author": "Prasetyo Adi",
+  "devDependencies": {
+    "electron": "^11.2.1",
+    "electron-builder": "^22.10.5",
+    "electron-installer-dmg": "^3.0.0",
+    "fs-extra": "^9.1.0"
+  },
+  "dependencies": {
+    "electron-log": "^4.3.2",
+    "electron-settings": "^4.0.2",
+    "gifsicle": "^5.2.0",
+    "make-dir": "^3.1.0",
+    "mozjpeg": "^7.0.0",
+    "pngquant-bin": "^6.0.0",
+    "svgo": "^2.2.2"
+  }
+}
